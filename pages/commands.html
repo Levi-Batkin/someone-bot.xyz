@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/favicon.png">
+    <title>someone-bot.xyz | Commands</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp;
+                <span>Someone Bot</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#/">Commands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="listdevs()">Staff</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/oauth2/authorize?client_id=884538018961190952&scope=bot&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fsomeone-bot.xyz%2Fthanks" target="_blank">Invite
+                                Bot</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.gg/mFrdpmtkSZ" target="_blank">Support
+                                Server</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://github.com/Levi-Batkin/someone-bot.xyz"
+                                target="_blank">Official Github</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="jumbotron text-center bg-transparent">
+        <h1 class="commandstitle">Commands</h1>
+        <p class="lead commandssub">View the commands for Hbot.</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Search">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="border"></div>
+        <br>
+        <br>
+        <br>
+        <div id="myCmd">
+            <br>
+            <button type="button" class="collapsible">help<span> - Displays the help menu.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">General</p>
+                <h4 style="color:rgb(191, 215, 237);">Usage:</h4>
+                <p>.help</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.help</p>
+                
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">ping<span> - Displays the bots latency.</span></button>
+            <div class="content">
+                <h4 style="color:rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Utility</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.ping, .latency</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.ping</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">avatar<span> - Displays your avatar.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Utility</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.avatar, .av</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.avatar [user], .avatar 721393505746026580, .avatar</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">play<span> - Allows you to request a song.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.play, .p</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.play rick astley never gonna give you up, .play https://www.youtube.com/watch?v=dQw4w9WgXcQ</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">connect<span> - Joins the bot to the voice channel.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.connect, .join</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.connect</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">resume<span> - Resumes the current track.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.resume</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.resume</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">pause<span> - Pauses the current track.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.pause</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.pause</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">queue<span> - Shows the current queue.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.queue, .q</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.queue</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">stop<span> - Clears the queue completely and the bot leaves the channel.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.stop</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.stop</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">eq<span> - Sets an equaliser on the music.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.eq</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.eq</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">vol<span> - Changes the bots volume.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.vol [1/150]</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.vol 75, .vol 126</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">swapdj<span> - Changes the DJ who has control</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.swapdj @user</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.swapdj Rixels#1337, .swapdj 721393505746026580, .swapdj @Rixels</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">nowplaying<span> - Displays the current playing track.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.nowplaying, .np</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.nowplaying, .np</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">shuffle<span> - Shuffles the songs in the queue.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(191, 215, 237);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Music</p>
+                <h4 style="color: rgb(191, 215, 237);">Usage:</h4>
+                <p>.shuffle</p>
+                <h4 style="color: rgb(191, 215, 237);">Examples:</h4>
+                <p>.shuffle</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="mastfoot mb-auto">
+            <div class="container-fluid mb-auto">
+                <div class="row d-flex justify-content-center">
+                    <div class="">
+                        <p style="font-size: 19px; padding: 0px; margin: 0px;"><a href="https://github.com/Levi-Batkin/someone-bot.xyz"
+                            style="text-decoration: none; color: white;">Made with 💖 by the Someone Development team!</a></br>Someone ©
+                          2021. All
+                          rights reserved.</br>[<a href="https://github.com/Levi-Batkin/someone-bot.xyz/blob/main/LICENSE"><b>Terms Of Use</b></a>]</p>
+                      </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function listdevs() {
+          alert("The developers are Lynt#0001 and Rixels#1337.");
+        }
+      </script>
+</body>
+
+</html>
